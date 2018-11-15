@@ -21,7 +21,7 @@ function nowServing(katzDeliLine) {
 
 
 function currentLine(katzDeliLine) {
-var theCurrentLine = []
+  var theCurrentLine = []
   for (var i = 0; i < katzDeliLine.length; i++) {
     theCurrentLine.push(" " + (i + 1) + "." + " " + katzDeliLine[i]);
   }
