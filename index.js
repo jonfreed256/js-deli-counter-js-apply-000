@@ -18,9 +18,10 @@ function nowServing(katzDeliLine) {
 }
 
 // Current line / line empty
-var theCurrentLine = []
+
 
 function currentLine(katzDeliLine) {
+var theCurrentLine = []
   for (var i = 0; i < katzDeliLine.length; i++) {
     theCurrentLine.push(" " + (i + 1) + "." + " " + katzDeliLine[i]);
   }
