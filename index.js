@@ -1,15 +1,15 @@
 // New customer
 function takeANumber(katzDeliLine, name) {
-    katzDeliLine.push(`${name}`);
+    katzDeliLine.push(name);
     return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`;
   }
 
 // Now serving
 function nowServing(katzDeliLine) {
-  var i = 0;
-  while (katzDeliLine.length > i) {
-    i++;
-  }
+  // var i = 0;
+  // while (katzDeliLine.length > i) {
+  //   i++;
+  // }
   if (katzDeliLine.length == 0) {
     return "There is nobody waiting to be served!"
   } else {
@@ -22,7 +22,7 @@ var theCurrentLine = []
 
 function currentLine(katzDeliLine) {
   for (var i = 0; i < katzDeliLine.length; i++) {
-    theCurrentLine.push(" " + [i + 1] + "." + " " + katzDeliLine[i]);
+    theCurrentLine.push(" " + (i + 1) + "." + " " + katzDeliLine[i]);
   }
   if (katzDeliLine.length > 0) {
     return "The line is currently:" + theCurrentLine;
@@ -30,3 +30,5 @@ function currentLine(katzDeliLine) {
       return  "The line is currently empty.";
   }
 }
+console.log(currentLine(["Jon", "Steven"]))
+console.log(currentLine(["Jeff", "Bill"]))
